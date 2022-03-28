@@ -34,6 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@main
+      - uses: tree
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
